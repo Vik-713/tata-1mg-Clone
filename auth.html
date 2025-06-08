@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tata 1mg - Login & Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-top">
+            <div class="logo">
+                <a href="medicines.html">
+                <img src="logo.png" alt="Tata 1mg Logo">
+                </a>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="medicines.html">MEDICINES</a></li>
+                    <li><a href="labtests.html">LAB TESTS</a></li>
+                    <li><a href="consultdoctors.html">CONSULT DOCTORS</a></li>
+                    <li><a href="cancercare.html">CANCER CARE</a></li>
+                    <li><a href="ayurveda.html">AYURVEDA</a></li>
+                    <li><a href="partnerships.html">PARTNERSHIPS</a></li>
+                    <li><a href="careplan.html">CARE PLAN</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <a href="auth.html">LOGIN | SIGN UP</a>
+                <a href="#">OFFERS</a>
+                <a href="#">NEED HELP?</a>
+                
+            </div>
+        </div>
+    </header>
+
+    <!-- Auth Container -->
+    <div class="auth-container">
+        <div class="auth-toggle">
+            <button id="login-toggle" class="active" onclick="showForm('login')">Login</button>
+            <button id="signup-toggle" onclick="showForm('signup')">Sign Up</button>
+        </div>
+
+        <!-- Login Form -->
+        <div id="login-form" class="auth-form active">
+            <h2>Login to Tata 1mg</h2>
+            <input type="text" placeholder="Username or Email" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+            <p>Forgot your password? <a href="#">Reset it</a></p>
+        </div>
+
+        <!-- Sign Up Form -->
+        <div id="signup-form" class="auth-form">
+            <h2>Sign Up for Tata 1mg</h2>
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <input type="password" placeholder="Confirm Password" required>
+            <button type="submit">Sign Up</button>
+            <p>Already have an account? <a href="#" onclick="showForm('login')">Login</a></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
