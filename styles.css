@@ -2680,10 +2680,20 @@ nav ul li a .new-badge {
     text-align: center;
 }
 
+
 .careplan-benefits h2 {
     font-size: 24px;
     color: #333;
     margin-bottom: 20px;
+}
+
+.highlights{
+    margin-top:20px;
+}
+
+
+.highlight{
+    margin-top:-20px;
 }
 
 .benefits-grid, .additional-benefits-grid {
