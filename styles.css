@@ -267,6 +267,7 @@ nav ul li a:hover {
     flex-shrink: 0;
     text-align: center;
     transition: box-shadow 0.25s ease;
+    cursor: pointer;
 }
 
 
@@ -451,6 +452,7 @@ nav ul li a:hover {
     margin-left: 10px;
     flex-shrink: 0;
     transition: box-shadow 0.25s ease;
+    cursor: pointer;
 }
 
 .brand-card:hover {
@@ -2033,4 +2035,953 @@ nav ul li a .new-badge {
 
 .contact-button span {
     font-size: 16px;
+}
+
+
+/* Ayurveda Page Styles */
+.ayurveda-hero {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #e6f7fa 50%, #fff 50%);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-text {
+    text-align: left;
+    max-width: 50%;
+}
+
+.hero-logo {
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.hero-text h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.hero-text h2 {
+    font-size: 48px;
+    color: #333;
+    font-weight: 700;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+.hero-subtext {
+    margin-top: 20px;
+}
+
+.hero-subtext h3 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.hero-subtext p {
+    font-size: 18px;
+    color: #666;
+}
+
+.ayurveda-featured-herbs {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.ayurveda-featured-herbs h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.herbs-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.herb-card {
+    flex: 1 1 150px;
+    max-width: 150px;
+    text-align: center;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.herb-card:hover {
+    transform: translateY(-5px);
+}
+
+.herb-card img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.herb-card p {
+    font-size: 14px;
+    color: #333;
+}
+
+.herb-card .read-more {
+    font-size: 12px;
+    color: #ff6f61;
+    cursor: pointer;
+}
+
+.herb-card .read-more:hover {
+    text-decoration: underline;
+}
+
+.ayurveda-categories {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #e6f7fa;
+    text-align: center;
+}
+
+.ayurveda-categories h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.categories-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.category-card {
+    flex: 1 1 150px;
+    max-width: 150px;
+    text-align: center;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+}
+
+.category-card img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.category-card p {
+    font-size: 14px;
+    color: #333;
+}
+
+.category-card .read-more {
+    font-size: 12px;
+    color: #ff6f61;
+    cursor: pointer;
+}
+
+.category-card .read-more:hover {
+    text-decoration: underline;
+}
+
+.ayurveda-glossary {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.ayurveda-glossary h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.glossary-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.glossary-card {
+    flex: 1 1 150px;
+    max-width: 150px;
+    text-align: center;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.glossary-card:hover {
+    transform: translateY(-5px);
+}
+
+.glossary-card p {
+    font-size: 14px;
+    color: #333;
+}
+
+.glossary-card .read-more {
+    font-size: 12px;
+    color: #ff6f61;
+    cursor: pointer;
+}
+
+.glossary-card .read-more:hover {
+    text-decoration: underline;
+}
+
+.ayurveda-footer-links {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #000;
+    text-align: center;
+}
+
+.ayurveda-footer-links .footer-column {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.ayurveda-footer-links a {
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.ayurveda-footer-links a:hover {
+    color: #ff6f61;
+}
+
+.ayurveda-disclaimer {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+.ayurveda-disclaimer p {
+    font-size: 14px;
+    color: #ccc;
+    line-height: 1.5;
+}
+
+
+/* Partnerships Page Styles */
+.partnerships-hero {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #e6f7fa 50%, #fff 50%);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-text {
+    text-align: left;
+    max-width: 50%;
+}
+
+.hero-logo {
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.hero-text h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.hero-text h2 {
+    font-size: 48px;
+    color: #333;
+    font-weight: 700;
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.know-more-btn {
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.know-more-btn:hover {
+    background-color: #e65a50;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+.partnerships-solutions {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.partnerships-solutions h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.solutions-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.solution-card {
+    flex: 1 1 150px;
+    max-width: 150px;
+    text-align: center;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.solution-card:hover {
+    transform: translateY(-5px);
+}
+
+.solution-card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.solution-card h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.solution-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+.solution-card .read-more {
+    font-size: 12px;
+    color: #ff6f61;
+    cursor: pointer;
+}
+
+.solution-card .read-more:hover {
+    text-decoration: underline;
+}
+
+.partnerships-ceo-message {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #e6f7fa;
+    text-align: center;
+}
+
+.partnerships-ceo-message h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.ceo-message-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.ceo-text {
+    text-align: left;
+    max-width: 50%;
+}
+
+.ceo-text p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.ceo-text .author {
+    font-size: 14px;
+    color: #333;
+    font-weight: 600;
+}
+
+.ceo-image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+.partnerships-form {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.partnerships-form h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.collaboration-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.collaboration-form input,
+.collaboration-form select,
+.collaboration-form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.collaboration-form .contact-number {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.collaboration-form .contact-number span {
+    font-size: 14px;
+    color: #333;
+}
+
+.collaboration-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.collaboration-form .submit-btn {
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.collaboration-form .submit-btn:hover {
+    background-color: #e65a50;
+}
+
+.form-success {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #e6f7fa;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.form-success p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.form-success .okay-btn {
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.form-success .okay-btn:hover {
+    background-color: #e65a50;
+}
+
+.partnerships-footer-links {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #000;
+    text-align: center;
+}
+
+.partnerships-footer-links .footer-column {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.partnerships-footer-links a {
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.partnerships-footer-links a:hover {
+    color: #ff6f61;
+}
+
+.partnerships-disclaimer {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+.partnerships-disclaimer p {
+    font-size: 14px;
+    color: #ccc;
+    line-height: 1.5;
+}
+
+
+/* Care Plan Page Styles */
+.careplan-hero {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #e6f7fa 50%, #fff 50%);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-text {
+    text-align: left;
+    max-width: 50%;
+}
+
+.hero-logo {
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.hero-text h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.hero-text h2 {
+    font-size: 48px;
+    color: #333;
+    font-weight: 700;
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.explore-plans-btn {
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.explore-plans-btn:hover {
+    background-color: #e65a50;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+.careplan-benefits {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.careplan-benefits h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.benefits-grid, .additional-benefits-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.benefit-card {
+    flex: 1 1 200px;
+    max-width: 200px;
+    text-align: center;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+}
+
+.benefit-card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.benefit-card h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.benefit-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+.careplan-plans {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #e6f7fa;
+    text-align: center;
+}
+
+.careplan-plans h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.plans-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.plan-card {
+    flex: 1 1 200px;
+    max-width: 250px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.plan-card h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.plan-card .new-badge {
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.plan-card .price {
+    font-size: 24px;
+    color: #ff6f61;
+    margin-bottom: 10px;
+}
+
+.plan-card .per-month {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.plan-card .save {
+    color: #ff6f61;
+    font-weight: 600;
+}
+
+.plan-card .join-now-btn {
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.plan-card .join-now-btn:hover {
+    background-color: #e65a50;
+}
+
+.savings-calculator {
+    margin-top: 20px;
+}
+
+.savings-calculator h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.savings-calculator .savings-amount {
+    font-size: 24px;
+    color: #ff6f61;
+    margin-bottom: 10px;
+}
+
+.savings-calculator .savings-amount span {
+    font-size: 16px;
+    color: #333;
+}
+
+.savings-calculator p {
+    font-size: 14px;
+    color: #666;
+}
+
+.careplan-testimonials {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.careplan-testimonials h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.testimonials-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.testimonial-card {
+    flex: 1 1 250px;
+    max-width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.testimonial-card .author {
+    font-size: 14px;
+    color: #333;
+    font-weight: 600;
+}
+
+.testimonial-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.testimonial-nav .prev-btn, .testimonial-nav .next-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #ff6f61;
+    cursor: pointer;
+}
+
+.testimonial-nav .dots {
+    display: flex;
+    gap: 5px;
+}
+
+.testimonial-nav .dot {
+    width: 8px;
+    height: 8px;
+    background-color: #ddd;
+    border-radius: 50%;
+}
+
+.testimonial-nav .dot.active {
+    background-color: #333;
+    width: 10px;
+    height: 10px;
+}
+
+.careplan-faq {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #e6f7fa;
+    text-align: center;
+}
+
+.careplan-faq h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.faq-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    flex: 1 1 300px;
+    max-width: 400px;
+    text-align: left;
+    padding: 15px;
+}
+
+.faq-item h4 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.careplan-footer-links {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #000;
+    text-align: center;
+}
+
+.careplan-footer-links .footer-column {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.careplan-footer-links a {
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.careplan-footer-links a:hover {
+    color: #ff6f61;
+}
+
+.careplan-disclaimer {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+.careplan-disclaimer p {
+    font-size: 14px;
+    color: #ccc;
+    line-height: 1.5;
 }
