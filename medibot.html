@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tata 1mg - Medicines</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7fa;
+        }
+
+        .medication-container {
+            max-width: 600px;
+            margin: 40px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .medication-container h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .form-description {
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+            font-weight: bold;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            border-color: #ff6f61;
+            outline: none;
+        }
+
+        .form-group small {
+            color: #777;
+            font-size: 12px;
+            display: block;
+            margin-top: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #ff6f61;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #e55a50;
+        }
+
+        .add-more-options {
+            text-align: center;
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+
+        .add-more-options p {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .button-group button {
+            width: auto;
+            padding: 10px 20px;
+        }
+
+        #clearForm, #confirmNo {
+            background-color: #6c757d;
+        }
+
+        #clearForm:hover, #confirmNo:hover {
+            background-color: #5a6268;
+        }
+
+        #confirmYes {
+            background-color: #28a745;
+        }
+
+        #confirmYes:hover {
+            background-color: #218838;
+        }
+
+        .medication-list h3 {
+            color: #333;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        .medication-item {
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .medication-item span {
+            color: #333;
+            font-size: 14px;
+        }
+
+        .medication-item button {
+            width: auto;
+            padding: 8px 12px;
+            background-color: #ff4d4d;
+        }
+
+        .medication-item button:hover {
+            background-color: #cc0000;
+        }
+
+        .notification {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #ff6f61;
+            color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            display: none;
+            z-index: 1000;
+            max-width: 300px;
+            font-size: 14px;
+        }
+
+        .notification p {
+            margin: 0 0 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-top">
+            <div class="logo">
+                <a href="medicines.html">
+                    <img src="asset/logo.jpg" alt="Tata 1mg Logo">
+                </a>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="medicines.html">MEDICINES</a></li>
+                    <li><a href="labtests.html">LAB TESTS</a></li>
+                    <li><a href="consultdoctors.html">CONSULT DOCTORS</a></li>
+                    <li><a href="cancercare.html">CANCER CARE</a></li>
+                    <li><a href="ayurveda.html">AYURVEDA</a></li>
+                    <li><a href="partnerships.html">PARTNERSHIPS</a></li>
+                    <li><a href="careplan.html">CARE PLAN</a></li>
+                    <li><a href="medibot.html">MEDIBOT</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <a href="auth.html">LOGIN | SIGN UP</a>
+                <a href="#">OFFERS</a>
+                <a href="#">NEED HELP?</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Medication Form -->
+    <div class="medication-container">
+        <h2>Medication Reminder Setup</h2>
+        <p class="form-description">Enter your medication details to set up reminders for your daily doses. You'll be notified every minute starting 5 minutes before each dose, and after the scheduled time, you'll be asked if the dose was taken. Low stock alerts (5 or fewer tablets) will also be sent.</p>
+        <form id="medicationForm">
+            <div class="form-group">
+                <label for="medName">Medication Name</label>
+                <input type="text" id="medName" placeholder="e.g., Paracetamol" required>
+                <small>Enter the full name of the medication as prescribed.</small>
+            </div>
+            <div class="form-group">
+                <label for="tabletsPerDay">Number of Tablets Per Day</label>
+                <input type="number" id="tabletsPerDay" min="1" placeholder="e.g., 2" required>
+                <small>Specify how many tablets you need to take daily.</small>
+            </div>
+            <div id="timeInputs" class="form-group">
+                <!-- Dynamic time inputs will be added here -->
+            </div>
+            <div class="form-group">
+                <label for="totalTablets">Total Tablets Remaining</label>
+                <input type="number" id="totalTablets" min="1" placeholder="e.g., 30" required>
+                <small>Enter the total number of tablets you currently have.</small>
+            </div>
+            <div class="form-group">
+                <label for="priority">Priority Level</label>
+                <select id="priority" required>
+                    <option value="low">Low (Single low-stock reminder)</option>
+                    <option value="high">High (Multiple low-stock reminders)</option>
+                </select>
+                <small>High-priority medications will remind you multiple times when stock is low.</small>
+            </div>
+            <button type="submit">Add Medication</button>
+        </form>
+        <div id="addMoreOptions" class="add-more-options" style="display: none;">
+            <p>Medication added successfully! Would you like to add another?</p>
+            <div class="button-group">
+                <button id="addAnother">Add Another Medication</button>
+                <button id="clearForm">Done</button>
+            </div>
+        </div>
+        <div id="medicationList" class="medication-list">
+            <h3>Your Medications</h3>
+            <p id="noMedications" style="display: none;">No medications added yet.</p>
+            <!-- Medication items will be added here -->
+        </div>
+    </div>
+
+    <!-- Notification -->
+    <div id="notification" class="notification">
+        <p id="notificationMessage"></p>
+        <div id="confirmationButtons" class="button-group" style="display: none;">
+            <button id="confirmYes">Yes</button>
+            <button id="confirmNo">No</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
