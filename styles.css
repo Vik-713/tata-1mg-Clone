@@ -1224,8 +1224,8 @@ nav ul li a:hover {
 }
 
 .service-card img {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     margin-bottom: 10px;
 }
 
@@ -1439,7 +1439,8 @@ nav ul li a:hover {
 
 .why-choose-card {
     flex: 1 1 250px;
-    max-width: 300px;
+    max-width: 1200px;
+    height: 300px;
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
@@ -1597,8 +1598,8 @@ nav ul li a .new-badge {
 .hero-image img {
     margin: 0;
     padding: 0;
-    height: 100%;
-    width: 100vw;
+    height: auto;
+    width: 75vw;
     
 }
 
@@ -1637,11 +1638,6 @@ nav ul li a .new-badge {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.service-card img {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 10px;
-}
 
 .service-card p {
     font-size: 14px;
@@ -1750,8 +1746,8 @@ nav ul li a .new-badge {
 }
 
 .cause-card img {
-    width: 60px;
-    height: 60px;
+    width: 100px;
+    height: 100px;
 }
 
 .cause-card h3 {
@@ -1946,8 +1942,8 @@ nav ul li a .new-badge {
 }
 
 .why-choose-card img {
-    width: 60px;
-    height: 60px;
+    width: 120px;
+    height: 120px;
 }
 
 .why-choose-card h3 {
@@ -1990,21 +1986,20 @@ nav ul li a .new-badge {
     font-family: Arial, sans-serif;
     margin: 20px;
     padding: 20px;
-    background-color: #000;
     color: #fff;
     text-align: center;
 }
 
 .cancer-disclaimer p {
     font-size: 14px;
-    color: #ccc;
+    color: black;
     line-height: 1.5;
     margin-bottom: 10px;
 }
 
 .contact-info {
     font-family: Arial, sans-serif;
-    background-color: #000;
+    background-color: #e8e8e8;
     padding: 10px 20px;
     display: flex;
     justify-content: center;
@@ -2016,10 +2011,7 @@ nav ul li a .new-badge {
     height: 30px;
 }
 
-.contact-info p {
-    font-size: 14px;
-    color: #fff;
-}
+
 
 .contact-button {
     position: fixed;
@@ -2076,11 +2068,7 @@ nav ul li a .new-badge {
     font-weight: 700;
 }
 
-.hero-image img {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-}
+
 
 .hero-subtext {
     margin-top: 20px;
@@ -2120,6 +2108,7 @@ nav ul li a .new-badge {
 
 .herb-card {
     flex: 1 1 150px;
+    width: 100px;
     max-width: 150px;
     text-align: center;
     padding: 15px;
@@ -2134,9 +2123,10 @@ nav ul li a .new-badge {
 }
 
 .herb-card img {
-    width: 80px;
-    height: 80px;
+    width: 130px;
+    height: 130px;
     margin-bottom: 10px;
+    border-radius: 5px;
 }
 
 .herb-card p {
@@ -2146,8 +2136,7 @@ nav ul li a .new-badge {
 
 .herb-card .read-more {
     font-size: 12px;
-    color: #ff6f61;
-    cursor: pointer;
+    
 }
 
 .herb-card .read-more:hover {
@@ -2191,9 +2180,10 @@ nav ul li a .new-badge {
 }
 
 .category-card img {
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 120px;
     margin-bottom: 10px;
+    border-radius: 5px;
 }
 
 .category-card p {
@@ -2203,8 +2193,7 @@ nav ul li a .new-badge {
 
 .category-card .read-more {
     font-size: 12px;
-    color: #ff6f61;
-    cursor: pointer;
+    
 }
 
 .category-card .read-more:hover {
@@ -2223,43 +2212,6 @@ nav ul li a .new-badge {
     font-size: 24px;
     color: #333;
     margin-bottom: 20px;
-}
-
-.glossary-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-.glossary-card {
-    flex: 1 1 150px;
-    max-width: 150px;
-    text-align: center;
-    padding: 15px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease;
-}
-
-.glossary-card:hover {
-    transform: translateY(-5px);
-}
-
-.glossary-card p {
-    font-size: 14px;
-    color: #333;
-}
-
-.glossary-card .read-more {
-    font-size: 12px;
-    color: #ff6f61;
-    cursor: pointer;
-}
-
-.glossary-card .read-more:hover {
-    text-decoration: underline;
 }
 
 .ayurveda-footer-links {
@@ -2361,12 +2313,6 @@ nav ul li a .new-badge {
     background-color: #e65a50;
 }
 
-.hero-image img {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-}
-
 .partnerships-solutions {
     font-family: Arial, sans-serif;
     margin: 20px;
@@ -2404,9 +2350,10 @@ nav ul li a .new-badge {
 }
 
 .solution-card img {
-    width: 60px;
-    height: 60px;
+    width: 120px;
+    height: 100px;
     margin-bottom: 10px;
+    border-radius: 5px;
 }
 
 .solution-card h3 {
@@ -2471,8 +2418,10 @@ nav ul li a .new-badge {
 
 .ceo-image img {
     width: 100%;
-    max-width: 400px;
+    max-width: 300px;
     height: auto;
+    padding-left: 40px;
+    padding-bottom: 40px;
 }
 
 .partnerships-form {
@@ -2666,12 +2615,6 @@ nav ul li a .new-badge {
     background-color: #e65a50;
 }
 
-.hero-image img {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-}
-
 .careplan-benefits {
     font-family: Arial, sans-serif;
     margin: 20px;
@@ -2685,15 +2628,12 @@ nav ul li a .new-badge {
     font-size: 24px;
     color: #333;
     margin-bottom: 20px;
-}
-
-.highlights{
-    margin-top:20px;
+    justify-content: center;
 }
 
 
 .highlight{
-    margin-top:-20px;
+    margin-top:20px;
 }
 
 .benefits-grid, .additional-benefits-grid {
@@ -2712,6 +2652,7 @@ nav ul li a .new-badge {
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease;
+    margin-bottom: 20px;
 }
 
 .benefit-card:hover {
@@ -2719,8 +2660,8 @@ nav ul li a .new-badge {
 }
 
 .benefit-card img {
-    width: 60px;
-    height: 60px;
+    width: 100px;
+    height: 100px;
     margin-bottom: 10px;
 }
 
@@ -2940,7 +2881,7 @@ nav ul li a .new-badge {
 
 .faq-item {
     flex: 1 1 300px;
-    max-width: 400px;
+    max-width: 4000px;
     text-align: left;
     padding: 15px;
 }
